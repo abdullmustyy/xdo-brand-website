@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream-50:  #FAF6ED;
+  --color-cream-50: #FAF6ED;
   --color-cream-100: #F4EFE6;
   --color-cream-200: #ECE4D3;
   --color-cream-300: #DCD2BE;
@@ -12,7 +12,7 @@
   --color-ink-400: #948EA1;
   --color-ink-300: #C7C2CE;
 
-  --color-violet-50:  #F3EEFF;
+  --color-violet-50: #F3EEFF;
   --color-violet-100: #E5DAFF;
   --color-violet-300: #B299FF;
   --color-violet-500: #7C3AED;
@@ -23,31 +23,31 @@
   --color-success: #5B8C5A;
 
   --font-display: var(--font-fraunces), 'Times New Roman', serif;
-  --font-sans:    var(--font-geist-sans), system-ui, -apple-system, sans-serif;
-  --font-mono:    var(--font-jetbrains-mono), ui-monospace, 'SF Mono', Menlo, monospace;
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, 'SF Mono', Menlo, monospace;
 
-  --ease-out:      cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in-out:   cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
   --duration-fast: 180ms;
   --duration-base: 320ms;
   --duration-slow: 600ms;
 
-  --shadow-card:     0 1px 2px rgba(21,19,28,0.04), 0 8px 24px rgba(21,19,28,0.04);
-  --shadow-hover:    0 2px 4px rgba(21,19,28,0.06), 0 16px 40px rgba(21,19,28,0.08);
-  --shadow-portrait: 0 24px 60px rgba(46,16,101,0.18);
+  --shadow-card: 0 1px 2px rgba(21, 19, 28, 0.04), 0 8px 24px rgba(21, 19, 28, 0.04);
+  --shadow-hover: 0 2px 4px rgba(21, 19, 28, 0.06), 0 16px 40px rgba(21, 19, 28, 0.08);
+  --shadow-portrait: 0 24px 60px rgba(46, 16, 101, 0.18);
 
-  --animate-rise:          rise 600ms var(--ease-out) forwards;
+  --animate-rise: rise 600ms var(--ease-out) forwards;
   --animate-portrait-rise: portrait-rise 900ms var(--ease-out) 200ms forwards;
-  --animate-fade-rise:     fade-rise 320ms var(--ease-out) both;
-  --animate-ticker:        ticker 38s linear infinite;
-  --animate-shimmer:       shimmer 700ms ease-out 1;
-  --animate-drift:         drift 6s ease-in-out infinite;
+  --animate-fade-rise: fade-rise 320ms var(--ease-out) both;
+  --animate-ticker: ticker 38s linear infinite;
+  --animate-shimmer: shimmer 700ms ease-out 1;
+  --animate-drift: drift 6s ease-in-out infinite;
 }
 
 :root {
   /* Short-name aliases — used directly in component inline styles
      so we preserve the prototype's verbatim style values. */
-  --cream-50:  var(--color-cream-50);
+  --cream-50: var(--color-cream-50);
   --cream-100: var(--color-cream-100);
   --cream-200: var(--color-cream-200);
   --cream-300: var(--color-cream-300);
@@ -58,7 +58,7 @@
   --ink-400: var(--color-ink-400);
   --ink-300: var(--color-ink-300);
 
-  --violet-50:  var(--color-violet-50);
+  --violet-50: var(--color-violet-50);
   --violet-100: var(--color-violet-100);
   --violet-300: var(--color-violet-300);
   --violet-500: var(--color-violet-500);
@@ -69,36 +69,36 @@
   --success: var(--color-success);
   --white: #FFFFFF;
 
-  --font-body:    var(--font-sans);
+  --font-body: var(--font-sans);
 
   --bg-page: var(--color-cream-100);
   --bg-band: var(--color-cream-200);
   --bg-card: var(--color-cream-50);
   --bg-dark: var(--color-ink-900);
 
-  --fg-1:       var(--color-ink-900);
-  --fg-2:       var(--color-ink-700);
-  --fg-3:       var(--color-ink-500);
-  --fg-muted:   var(--color-ink-400);
+  --fg-1: var(--color-ink-900);
+  --fg-2: var(--color-ink-700);
+  --fg-3: var(--color-ink-500);
+  --fg-muted: var(--color-ink-400);
   --fg-on-dark: var(--color-cream-200);
-  --fg-accent:  var(--color-violet-700);
+  --fg-accent: var(--color-violet-700);
 
-  --text-hero:    clamp(3.5rem, 7vw, 6.5rem);
-  --text-h1:      clamp(2.5rem, 4.5vw, 4rem);
-  --text-h2:      clamp(1.875rem, 3vw, 2.75rem);
-  --text-h3:      1.5rem;
-  --text-h4:      1.125rem;
+  --text-hero: clamp(3.5rem, 7vw, 6.5rem);
+  --text-h1: clamp(2.5rem, 4.5vw, 4rem);
+  --text-h2: clamp(1.875rem, 3vw, 2.75rem);
+  --text-h3: 1.5rem;
+  --text-h4: 1.125rem;
   --text-body-lg: 1.25rem;
-  --text-body:    1.0625rem;
-  --text-small:   0.9375rem;
-  --text-micro:   0.75rem;
+  --text-body: 1.0625rem;
+  --text-small: 0.9375rem;
+  --text-micro: 0.75rem;
 
-  --space-1:  4px;
-  --space-2:  8px;
-  --space-3:  12px;
-  --space-4:  16px;
-  --space-6:  24px;
-  --space-8:  32px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
   --space-12: 48px;
   --space-16: 64px;
   --space-20: 80px;
@@ -111,40 +111,90 @@
   --container-lg: 1152px;
   --container-xl: 1280px;
 
-  --radius-sm:   6px;
-  --radius-md:   10px;
-  --radius-lg:   16px;
-  --radius-xl:   24px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
   --radius-pill: 999px;
 }
 
 @keyframes rise {
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes portrait-rise {
-  to { opacity: 1; transform: scale(1); }
-}
-@keyframes fade-rise {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes ticker {
-  to { transform: translateX(-50%); }
-}
-@keyframes shimmer {
-  to { transform: translateX(100%); }
-}
-@keyframes drift {
-  0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-4px); }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-html, body {
+@keyframes portrait-rise {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ticker {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes shimmer {
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes drift {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@utility hide-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+}
+
+@layer base {
+  body {
+    @apply hide-scrollbar;
+  }
+
+  ::selection {
+    background: var(--color-violet-50);
+    color: var(--color-violet-700);
+  }
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
   background: var(--bg-page);
   color: var(--fg-1);
 }
+
 body {
   font-family: var(--font-body);
   font-size: var(--text-body);
@@ -153,50 +203,68 @@ body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-button { font-family: inherit; }
 
-h1, h2, h3, h4, h5 {
+button {
+  font-family: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: var(--font-display);
   color: var(--fg-1);
   font-weight: 500;
   margin: 0;
   text-wrap: balance;
 }
+
 h1 {
   font-size: var(--text-h1);
   letter-spacing: -0.02em;
   line-height: 1.05;
   font-weight: 600;
 }
+
 h2 {
   font-size: var(--text-h2);
   letter-spacing: -0.015em;
   line-height: 1.1;
 }
+
 h3 {
   font-size: var(--text-h3);
   letter-spacing: -0.015em;
   line-height: 1.2;
 }
+
 h4 {
   font-size: var(--text-h4);
   letter-spacing: -0.01em;
   line-height: 1.3;
   font-weight: 600;
 }
+
 p {
   margin: 0;
   color: var(--fg-2);
   line-height: 1.6;
   text-wrap: pretty;
 }
+
 a {
   color: var(--fg-accent);
   text-decoration: none;
   transition: color var(--duration-fast) var(--ease-in-out);
 }
-a:hover { color: var(--color-violet-500); }
-code, .mono {
+
+a:hover {
+  color: var(--color-violet-500);
+}
+
+code,
+.mono {
   font-family: var(--font-mono);
   font-size: 0.9em;
 }
@@ -210,6 +278,7 @@ code, .mono {
   color: var(--color-violet-700);
   margin: 0 0 16px 0;
 }
+
 .display-hero {
   font-family: var(--font-display);
   font-size: var(--text-hero);
@@ -218,6 +287,7 @@ code, .mono {
   line-height: 1.02;
   color: var(--fg-1);
 }
+
 .pull-quote {
   font-family: var(--font-display);
   font-style: italic;
@@ -241,11 +311,26 @@ code, .mono {
   transform: translateY(14px);
   animation: rise 600ms var(--ease-out) forwards;
 }
-.rise.d1 { animation-delay: 80ms; }
-.rise.d2 { animation-delay: 160ms; }
-.rise.d3 { animation-delay: 240ms; }
-.rise.d4 { animation-delay: 320ms; }
-.rise.d5 { animation-delay: 400ms; }
+
+.rise.d1 {
+  animation-delay: 80ms;
+}
+
+.rise.d2 {
+  animation-delay: 160ms;
+}
+
+.rise.d3 {
+  animation-delay: 240ms;
+}
+
+.rise.d4 {
+  animation-delay: 320ms;
+}
+
+.rise.d5 {
+  animation-delay: 400ms;
+}
 
 .portrait-rise {
   opacity: 0;
@@ -260,6 +345,7 @@ code, .mono {
     opacity 700ms var(--ease-out),
     transform 700ms var(--ease-out);
 }
+
 .reveal.in {
   opacity: 1;
   transform: translateY(0);
@@ -275,15 +361,19 @@ code, .mono {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, transparent 30%, rgba(255,255,255,0.32) 50%, transparent 70%);
+  background: linear-gradient(120deg, transparent 30%, rgba(255, 255, 255, 0.32) 50%, transparent 70%);
   transform: translateX(-100%);
   pointer-events: none;
 }
+
 .violet-shimmer.shimmer-go::after {
   animation: shimmer 700ms ease-out 1;
 }
 
-.ink-link { position: relative; }
+.ink-link {
+  position: relative;
+}
+
 .ink-link::after {
   content: "";
   position: absolute;
@@ -294,12 +384,20 @@ code, .mono {
   background: currentColor;
   transition: right 300ms var(--ease-out);
 }
-.ink-link:hover::after { right: 0; }
 
-.drift { animation: drift 6s ease-in-out infinite; }
+.ink-link:hover::after {
+  right: 0;
+}
+
+.drift {
+  animation: drift 6s ease-in-out infinite;
+}
 
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
