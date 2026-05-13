@@ -203,7 +203,6 @@ export default function Footer() {
           <div style={{ display: "flex", gap: 24 }}>
             <FooterLink>Privacy</FooterLink>
             <FooterLink>Terms</FooterLink>
-            <FooterLink href="/404">System</FooterLink>
           </div>
         </div>
       </Container>
